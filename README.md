@@ -1,10 +1,26 @@
-# DevOps Project - Multi-Container Application
+# Projet DevOps - Pipeline CI/CD
 
-## Architecture Overview
+## Architecture
+- Frontend: React + Nginx
+- Backend: Node.js + Express
+- Database: MongoDB
 
-This project implements a complete CI/CD pipeline for a multi-container application consisting of:
-- **Frontend**: React application served by Nginx
-- **Backend**: Node.js/Express REST API
-- **Database**: MongoDB
+## Outils utilisés
+- GitHub (Code source)
+- GitHub Actions (CI)
+- Jenkins (CD)
+- Docker & Docker Compose (Conteneurisation)
+- SonarQube (Qualité du code)
+- Slack (Notifications)
 
-## Pipeline Architecture
+## Pipeline CI/CD
+1. Push sur GitHub
+2. GitHub Actions exécute les tests
+3. Webhook déclenche Jenkins
+4. Jenkins build et déploie
+5. SonarQube analyse le code
+6. Slack envoie une notification
+
+## Comment exécuter
+```bash
+docker-compose up -d

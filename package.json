@@ -1,0 +1,12 @@
+{
+  "name": "devops-project",
+  "version": "1.0.0",
+  "description": "Simple DevOps project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Test OK\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
